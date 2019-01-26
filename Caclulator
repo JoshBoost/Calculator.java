@@ -1,0 +1,128 @@
+import java.util.Scanner;
+import java.lang.math;
+
+public class Calculator {
+
+	int x, y, result;
+	//behaviors
+	public int addNumbers(int x, int y){
+		result = x + y;
+	}
+	public int subtractNumbers(int x, int y){
+		result = x - y;
+	}
+	public int multiplyNumbers(int x, int y){
+		result = x * y;
+	}
+	public float divideNumbers(float x, float y){
+		float result = x % y;
+	}
+	public float squarerootNumber(float x){
+		float result = Math.abs(float x);
+	}
+	public float PowerOfNumbers(float x, float y) {
+		float result = Math.pow(float x,float y);
+	}
+	public float FloorOfNumber(float x) {
+		float result = Math.floor(float x);
+	}
+	public float CeilingOfNumber(float x) {
+		float result = Math.ceil(float x);
+	}
+	public float factorialNumber(float x){
+		float result = Math.factorial(float x);
+
+	public static void main(String[] args) {
+		//instantiation
+		//Task to preform
+		Calculator myCalculator = new Calculator();
+		//show all operations here on myCalculator Object
+		//Other methods to call and their parameters that need to be set
+		System.out.println("Enter a number: ");
+		Scanner add = new Scanner(System.in);
+		myCalculator.x = add.nextInt();
+		System.out.println("Enter a number: ");
+		Scanner add2 = new Scanner(System.in);
+		myCalculator.y = add2.nextInt();
+
+		//Call AddNumbers method and assign parms
+		System.out.println(myCalculator.addNumbers(x,y));
+
+		//Start asking for imputs for next method
+		System.out.println("Enter a number we will subract from: ");
+		Scanner subtract = new Scanner(System.in);
+		myCalculator.x = subtract.nextInt();
+		System.out.println("Enter a number to subtract from: ");
+		Scanner subtract2 = new Scanner(System.in);
+		myCalculator.y = subtract2.nextInt();
+
+		//Call subtractNumbers and assign parms
+		System.out.println(myCalculator.subtractNumbers(x,y));
+
+		//Inputs to be used for Multiple
+		System.out.println("Enter a number we can multiple: ");
+		Scanner multiply = new Scanner(System.in);
+		myCalculator.x = multiply.nextInt();
+		System.out.println("Enter a number to multiply by: ");
+		Scanner multiply2 = new Scanner(System.in);
+		myCalculator.y = multiply2.nextInt();
+
+		//Call method and assign parms
+		System.out.println(myCalculator.multiplyNumbers(x,y));
+
+		//Inputs for dividing
+		System.out.println("Enter a number we will divide from: ");
+		Scanner divide = new Scanner(System.in);
+		myCalculator.x = divide.nextInt();
+		System.out.println("Enter a number do divide by: ");
+		Scanner divide2 = new Scanner(System.in);
+		myCalculator.y = divide2.nextInt();
+
+		//Call divideNumbers and assign parms
+		System.out.println(myCalculator.divideNumbers(x,y));
+
+		//Inputs for SquareRoot
+		System.out.println("Enter a number we will find the square root of: ");
+		Scanner squareroont = new Scanner(System.in);
+		myCalculator.x = squarroot.nextInt();
+
+		//Call squarerootNumbers
+		System.out.println(myCalculator.squarerootNumber(x))
+
+		//Inputs for to the power of
+		System.out.println("Enter a number we will increase with the power of another number: ");
+		Scanner power = new Scanner(System.in);
+		myCalculator.x = power.nextInt();
+		System.out.println("Enter a number increase to the power by: ");
+		Scanner power2 = new Scanner(System.in);
+		myCalculator.y = power2.nextInt();
+
+		//Call method for to the pwower
+		System.out.println(myCalculator.PowerOfNumbers(x, y))
+
+		//Inputs for Floor
+		System.out.println("Enter a number we will find the floor of?: ");
+		Scanner floor = new Scanner(System.in);
+		myCalculator.x = floor.nextInt();
+
+		//Call method for Floor
+		System.out.println(myCalculator.FloorOfNumber(x))
+
+		//Inputs for Ceiling of
+		System.out.println("Enter a number we will find the ceiling of: ");
+		Scanner ceiling = new Scanner(System.in);
+		myCalculator.x = ceiling.nextInt();
+
+		//Call method for ceiling
+		System.out.println(myCalculator.CeilingOfNumber(x))
+
+		//Inputs for Factorial
+		System.out.println("Enter a number we will find the factorial of: ");
+		Scanner factorial = new Scanner(System.in);
+		myCalculator.x = factorial.nextInt();
+
+		//Call method for Factorial
+		System.out.println(myCalculator.factorialNumber(x))
+
+	}
+}
